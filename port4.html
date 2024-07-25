@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portfolio</title>
+    <link rel="stylesheet" href="port4.css">
+    <link href='port4.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#education">EDUCATION</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#resume">RESUME</a></li>
+                <li><a href="#contacts">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="header-content">
+        <img src="My_Image.jpg" alt="Your profile picture" class="profile">
+        <h1>Harish Dannana</h1>
+        <p>I'm a Web Developer.</p>
+    </div>
+
+    <section id="about">
+        <div class="section-content">
+            <h2>About Me:</h2>
+            <p>Hi, I'm Harish Dannana, a B.Tech student at SRM University AP. I’m passionate about gaining new skills and aim to become a proficient in my field.
+               I'm a self-motivated, hard-working and enthusiastic person who is always ready to learn new things.Discover my projects and insights as I push boundaries and turn ideas into reality.In my free time, I enjoy listening to music, 
+               playing cricket, and browsing the internet. I love exploring new skills and am always eager to learn and grow. 
+            </p>
+        </div>
+    </section>
+
+    <!-- The rest of your HTML code -->
+    <section id="education">
+        <div class="section-content">
+            <h2>Education:</h2>
+            <center>
+            <table border="1" cellpadding="5" cellspacing="5">
+                <tr>
+                    <th>SNo.</th>
+                    <th>Institute Name</th>
+                    <th>Place</th>
+                    <th>Year</th>
+                </tr>
+                <tr>
+                    <td>1.</td>
+                    <td>SRM UNIVERSITY</td>
+                    <td>Amaravathi, AP</td>
+                    <td>In Progress</td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>SRI CHAITANYA JR COLLEGE</td>
+                    <td>Vishakapatnam, AP</td>
+                    <td>2020 - 2022</td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td>Jawahar Navodaya Vidyalaya</td>
+                    <td>Vennelavalasa, AP</td>
+                    <td>2015 - 2020</td>
+                </tr>
+            </table>
+            </center>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="section-content">
+            <h2>Skills:</h2>
+            <ul type="disc">
+                <li>Programming Languages</li><br>
+                <ol type="1">
+                    <li>C, C++, Python , SQL.</li><br>
+                    <li>HTML, CSS, JavaScript, PHP.</li>
+                </ol><br>
+                <li>Data Structures and Algorithms, OOPS with C++.</li><br>
+                <li>Design and Analysis of Algorithms.</li><br>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="section-content">
+            <h2>Projects:</h2>
+                <div class="work-container">
+
+
+                   <div class="work-info">
+                           <h4>HOSTEL MANAGEMENT SYSTEM </h1>
+                            <p>
+                                The Hostel Management System uses MySQL for database management, HTML for the user interface, and PHP for server-side scripting, providing a seamless platform for managing student records, room allocations, and fee processing. <br>
+                                Skillset :  MY SQL, HTML , CSS , JAVA SCRIPT and PHP.
+                            </p>
+                   </div>
+                  
+                   
+           
+                       <div class="work-info">
+                           <h4>HOSPITAL MANAGEMENT SYSTEM</h1>
+                               <p>
+                                The Hospital Management System is a C language-based project utilizing  priority queue by providing details of the patient we can visit doctor in priority wise to contact the doctor by their emergency . It offers functionalities such as  providing an efficient and organized way to handle Hospital data. <br>
+                                   Skillset: DS in C.
+                               </p>
+                           </div>
+                       
+                    
+           
+                   <div class="work-info">
+                           <h4>ATM SEARCH ENGINE </h1>
+                            <p>
+                                The ATM Search Engine project aims to develop a platform for users to locate nearby automated teller machines (ATMs) easily. It involves data indexing, real-time querying, and user-friendly interfaces to provide accurate and up-to-date information on ATM locations, enhancing convenience and accessibility.<br>
+                               Skillset: OOps in c++. 
+                            </p>
+                       </div>
+                   </div>
+               
+        </div>
+    </section>
+
+    <section id="resume">
+        <div class="section-content">
+            <h2>Resume:</h2>
+            <p>Have a look! at my Resume.<br><br>
+                Just Click on 'Download Resume' button to Download my Resume.
+            </p>
+            <center>
+                <a href="harish_resume .pdf" class="download-button" target="_blank">Download Resume</a>
+            </center>
+        </div>
+    </section>
+
+    <section id="contacts">
+        <div class="section-content">
+            <h2>Contact:</h2>
+    <div class="social-media"> 
+        <ul type="none">
+        <li><a href="https://www.linkedin.com/in/harish-dannana/" target="_blank" ><i class='bx bxl-linkedin-square' ></i></a>Linkedin</li>
+        <li><a href="https://www.instagram.com/madanusathish/" target="_blank"><i class='bx bxl-instagram' target="_blank"></i></a>Instagram</li>
+        <li><a href= "#"><i class='bx-fw bx bxl-facebook' ></i></a>Facebook</li>
+        <li><a href="#"><i class='bx bxl-github' ></i></a>Github</li>
+        </ul>
+    </div>
+    </div>
+</section>
+
+    
+    <footer>
+        <marquee><p>&copy; 2024 Thanks for visiting my portfolio - Have a Great Day.</p></marquee>
+    </footer>
+
+    <button class="top-button" id="top-button">Top</button>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        const topButton = document.getElementById('top-button');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                topButton.style.display = 'block';
+            } else {
+                topButton.style.display = 'none';
+            }
+        });
+
+        topButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
